@@ -5,18 +5,24 @@
 
 Console.Write("Enter a number: ");
 int a = int.Parse(Console.ReadLine());
-int i = 0;
-while (i < a)
-{
-    int temp = i + 2;
-    if (temp <= a)
+if (a > 1){
+    int i = 0;
+    while (i < a)
     {
-        Console.WriteLine(temp);
-        i = i + 2;
-    }
-    else
-    {
-        return;
-    }
+        int temp = i + 2;
+        if (temp <= a)
+        {
+            Console.WriteLine(temp);
+            i = i + 2;
+        }
+        else
+        {
+            return;
+        }
 
+    }
+}
+else
+{
+    Console.WriteLine("There is no even numbers");
 }
