@@ -6,4 +6,4 @@
 
 Console.Write("Enter 3-digit number: ");
 int a = int.Parse(Console.ReadLine());
-Console.WriteLine((a % 10) % 10);
+Console.WriteLine(a % 10);
