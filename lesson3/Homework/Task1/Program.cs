@@ -14,9 +14,9 @@ void palindrom_check(int number)
 
     while (true)
     {
-        if (number % 10 == number / 10000)
+        if (number % 10 == number / 10000) // проверяем 1 и последнюю
         {
-            if (number / 1000 % 10 == number % 100 / 10)
+            if (number / 1000 % 10 == number % 100 / 10) // проверяем 2 и 4 числа
             {
                 Console.WriteLine("Yes");
                 return;
