@@ -28,7 +28,7 @@ void findTheNum(int[] array, int num)
     {
         if(array[i] == num){
             Console.WriteLine("Yes");
-            return;
+            break;
         }
     }
     Console.WriteLine("No");
