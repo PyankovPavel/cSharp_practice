@@ -7,7 +7,7 @@ double[] fillTheArray(int n)
     double[] array = new double[n];
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = Math.Round(new Random().NextDouble() * 100, 2);
+        array[i] = Math.Round(new Random().NextDouble() * (100 + 150) - 100, 2);
     }
     return array;
 }
@@ -37,9 +37,8 @@ double MaxMinDiff(double[] array)
             min = array[i];
         }
     }
-   
-    double diff = max - min;
-    return diff;
+
+    return max - min;
 }
 
 double[] array = fillTheArray(6);
