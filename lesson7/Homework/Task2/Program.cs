@@ -37,24 +37,24 @@ void printArray(int[,] array)
 
 void findPositionOfElement(int[,] array)
 {
-    Console.WriteLine("Enter 1st index of position: ");
+    Console.WriteLine("Enter 1st coordinate of position: ");
     int a = int.Parse(Console.ReadLine());
-    Console.WriteLine("Enter 2nd index of position: ");
+    Console.WriteLine("Enter 2nd coordinate of position: ");
     int b = int.Parse(Console.ReadLine());
     int result = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            if (a == i && b == j)
+            if (a - 1 == i && b - 1 == j)
             {
                 result = array[i, j];
-                Console.WriteLine($"Element on input position is {result} \v"); 
+                Console.WriteLine($"Element on input position is {result}");
                 return;
             }
         }
     }
-    Console.WriteLine("There is no element on that position \v");
+    Console.WriteLine("There is no element on that position");
 }
 
 int[,] array = fillArray();
